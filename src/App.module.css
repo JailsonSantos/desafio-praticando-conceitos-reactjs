@@ -1,0 +1,130 @@
+.header {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 1rem;
+  max-width: 70rem;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.addTasks {
+  width: 90%;
+  padding: 0;
+  display: flex;
+  margin: 0 auto;
+  margin-top: -2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.addTasks input {
+  width: 100%;
+  padding: 1rem;
+  height: 3.375rem;
+  border-radius: 8px;
+  margin-right: 1rem;
+  color: var(--gray-100);
+  background: var(--gray-500);
+  border: 1px solid var(--gray-700);
+}
+
+.addTasks button {
+  gap: 8px;
+  border: none;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  height: 52px;
+  border-radius: 8px;
+  background: var(--blue-900);
+
+  font-size: 0.875rem;
+  color: var(--gray-100);
+}
+
+.addTasks button[type="submit"]:not(:disabled):hover {
+  background: var(--blue-500);
+}
+
+.addTasks button[type="submit"]:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+.tasksInfo {
+  padding: 0;
+  width: 90%;
+  margin-top: 2rem;
+}
+
+.tasksHeader {
+  width: 100%;
+  display: flex;
+  margin-top: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tasksHeader div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tasksCreated {
+  line-height: 1.6;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: var(--blue-500);
+}
+
+.tasksFinalized {
+  line-height: 1.6;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: var(--purple-500);
+}
+
+.bullet {
+  width: auto;
+  height: 19px;
+  padding: 10px;
+  display: flex;
+  margin-left: 5px;
+  font-weight: bold;
+  font-size: 0.75rem;
+  align-items: center;
+  border-radius: 999px;
+  color: var(--gray-200);
+  justify-content: center;
+  background: var(--gray-400);
+}
+
+.taskContent {
+  width: 100%;
+  display: flex;
+  line-height: 1.4;
+  padding: 2rem 0;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid var(--gray-400);
+}
+
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%;
+    /* Equivale a 14px */
+  }
+
+  .header {
+    grid-template-columns: 1fr;
+  }
+}
